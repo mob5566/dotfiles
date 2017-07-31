@@ -1,6 +1,13 @@
 Dotfiles
 ========
 
+This repo is forked(~~inspired~~) from 
+[anishathalye](https://github.com/anishathalye/dotfiles), 
+and is adapted into my own dotfiles.
+
+Usage
+-----
+
 After cloning this repo, run `install` to automatically set up the development
 environment. Note that the install script is idempotent: it can safely be run
 multiple times.
