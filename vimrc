@@ -155,6 +155,9 @@ nnoremap <Leader>r :SyntasticReset<CR>
 nnoremap <Leader>i :SyntasticInfo<CR>
 nnoremap <Leader>m :SyntasticToggleMode<CR>
 
+" syntastic python checker
+let g:syntastic_python_checkers = ['pylint', 'python']
+
 " easymotion
 map <Space> <Plug>(easymotion-prefix)
 
