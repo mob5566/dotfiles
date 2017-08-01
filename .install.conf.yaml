@@ -22,6 +22,7 @@
     ~/.vimrc:
     ~/.zsh:
     ~/.zshrc:
+    ~/.config/hime: 'config/hime'
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
