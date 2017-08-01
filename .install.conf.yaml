@@ -16,6 +16,7 @@
     ~/.inputrc:
     ~/.pythonrc:
     ~/.shell:
+    ~/.tmux:
     ~/.tmux.conf:
     ~/.vim:
     ~/.vimrc:
