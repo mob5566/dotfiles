@@ -136,5 +136,5 @@ temp() {
     filename=$(basename ${1})
     ext=${filename##*.}
 
-    cp ~/.template/pc/"temp.$ext" $filename 2> "\dev\null"
+    cp ~/.template/pc/"temp.$ext" $filename 2> "/dev/null"
 }
