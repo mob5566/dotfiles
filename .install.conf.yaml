@@ -23,6 +23,7 @@
     ~/.zsh:
     ~/.zshrc:
     ~/.config/hime: 'config/hime'
+    ~/.template:
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig

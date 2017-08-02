@@ -126,3 +126,15 @@ alias mirrorsite='wget -m -k -K -E -e robots=off'
 
 # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias peek='tee >(cat 1>&2)'
+
+#
+# Programming Contests
+#
+
+# code templates
+temp() {
+    filename=$(basename ${1})
+    ext=${filename##*.}
+
+    cp ~/.template/pc/"temp.$ext" $filename 2> "\dev\null"
+}
