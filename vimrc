@@ -114,6 +114,9 @@ nnoremap <C-n> :set rnu!<CR>
 " save read-only files
 command -nargs=0 Sudow w !sudo tee % >/dev/null
 
+" insert date
+nnoremap <F2> :read !date -I<CR>kJ<ESC>
+
 "---------------------
 " Plugin configuration
 "---------------------
