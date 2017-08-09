@@ -138,3 +138,10 @@ temp() {
 
     cp ~/.template/pc/"temp.$ext" $filename 2> "/dev/null"
 }
+
+#
+# Miscellaneous
+#
+
+# reboot to Windows
+alias gowin='sudo grub-reboot 4 && reboot'
