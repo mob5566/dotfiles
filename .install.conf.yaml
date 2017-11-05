@@ -22,7 +22,6 @@
     ~/.vimrc:
     ~/.zsh:
     ~/.zshrc:
-    ~/.config/hime: 'config/hime'
     ~/.template:
 
 - shell:
