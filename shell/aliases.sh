@@ -142,6 +142,3 @@ temp() {
 #
 # Miscellaneous
 #
-
-# reboot to Windows
-alias gowin='sudo grub-reboot 4 && reboot'
