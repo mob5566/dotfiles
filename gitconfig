@@ -106,6 +106,8 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
+	filemode = true
+	editor = vim
 
 # Allow local customizations in the .gitconfig_local file
 [include]
