@@ -4,5 +4,5 @@
 set tabstop=4
 
 " auto bracket complet
-inoremap <F5> {<CR><CR>}<ESC>kI<Tab>
+inoremap <F5> {<CR>}<ESC>O
 
