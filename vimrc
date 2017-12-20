@@ -36,14 +36,6 @@ else
     highlight SignColumn ctermbg=234
     highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
     highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
-    let g:NeatStatusLine_color_normal='ctermfg=64 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_insert='ctermfg=136 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_replace='ctermfg=160 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_visual='ctermfg=33 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_position='ctermfg=245 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_modified='ctermfg=166 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_line='ctermfg=61 ctermbg=235 cterm=bold'
-    let g:NeatStatusLine_color_filetype='ctermfg=37 ctermbg=235 cterm=bold'
 endif
 
 filetype plugin indent on " enable file type detection
