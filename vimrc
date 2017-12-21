@@ -206,6 +206,30 @@ nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " i: Find files #including this file
 nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 
+" fugitive
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gr :Gread<CR>
+nnoremap <leader>gw :Gwrite<CR>
+
+" git vsplit diff
+nnoremap <leader>gdi :Gvsplit! di<CR>
+nnoremap <leader>gdis :Gvsplit! dis<CR>
+nnoremap <leader>gdiw :Gvsplit! diw<CR> :AnsiEsc<CR>
+nnoremap <leader>gdc :Gvsplit! dc<CR>
+nnoremap <leader>gdcs :Gvsplit! dcs<CR>
+nnoremap <leader>gdcw :Gvsplit! dcw<CR> :AnsiEsc<CR>
+nnoremap <leader>gdh :Gvsplit! dh<CR>
+nnoremap <leader>gdhs :Gvsplit! dhs<CR>
+nnoremap <leader>gdhw :Gvsplit! dhw<CR> :AnsiEsc<CR>
+
+" git vsplit log
+nnoremap <leader>ggr :Gvsplit! gr<CR> :AnsiEsc<CR>
+nnoremap <leader>ggrd :Gvsplit! grd<CR> :AnsiEsc<CR>
+nnoremap <leader>ggrl :Gvsplit! grl<CR> :AnsiEsc<CR>
+nnoremap <leader>ggra :Gvsplit! gra<CR> :AnsiEsc<CR>
+nnoremap <leader>ggrad :Gvsplit! grad<CR> :AnsiEsc<CR>
+nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
+
 "---------------------
 " Local customizations
 "---------------------
