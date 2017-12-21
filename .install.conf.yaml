@@ -26,3 +26,6 @@
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
+
+  # generate tmuxline configure
+  - vim -c 'Tmuxline airline' -c 'TmuxlineSnapshot ~/.tmuxline.conf' -c 'quit'
