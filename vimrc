@@ -32,6 +32,8 @@ else
     set background=dark
     "let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
     colorscheme solarized
+
+    let g:airline_powerline_fonts = 1
 endif
 
 filetype plugin indent on " enable file type detection
