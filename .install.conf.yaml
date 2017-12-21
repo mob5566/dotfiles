@@ -28,7 +28,7 @@
   - git update-submodules # after linking ~/.gitconfig
 
   # generate tmuxline configure
-  - vim -c 'Tmuxline airline' -c 'TmuxlineSnapshot ~/.tmuxline.conf' -c 'quit'
+  - vim -c 'Tmuxline airline' -c 'TmuxlineSnapshot! ~/.tmuxline.conf' -c 'quit'
   # generate promptline configure
-  - vim -c "PromptlineSnapshot ~/.shell_prompt.sh airline" -c "quit"
+  - vim -c 'PromptlineSnapshot! ~/.shell_prompt.sh airline' -c 'quit'
 
