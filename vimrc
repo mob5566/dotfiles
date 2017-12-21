@@ -24,14 +24,14 @@ augroup END
 " but it can be set to force 256 colors
 " set t_Co=256
 if has('gui_running')
-    colorscheme solarized
+    colorscheme bubblegum
 elseif &t_Co < 256
     colorscheme default
     set nocursorline " looks bad in this mode
 else
     set background=dark
     "let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
-    colorscheme solarized
+    colorscheme bubblegum
 
     let g:airline_powerline_fonts = 1
 endif
