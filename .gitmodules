@@ -113,3 +113,6 @@
 [submodule "vim/bundle/vim-colorschemes"]
 	path = vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/bundle/AnsiEsc.vim"]
+	path = vim/bundle/AnsiEsc.vim
+	url = https://github.com/mob5566/AnsiEsc.vim
