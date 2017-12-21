@@ -29,3 +29,6 @@
 
   # generate tmuxline configure
   - vim -c 'Tmuxline airline' -c 'TmuxlineSnapshot ~/.tmuxline.conf' -c 'quit'
+  # generate promptline configure
+  - vim -c "PromptlineSnapshot ~/.shell_prompt.sh airline" -c "quit"
+

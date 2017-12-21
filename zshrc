@@ -23,8 +23,14 @@ source ~/.shell/external.sh
 # Aliases
 source ~/.shell/aliases.sh
 
-# Custom prompt
-source ~/.zsh/prompt.zsh
+# prompt
+if [ -f ~/.shell_prompt.sh ]; then
+    # use Promptline
+    source ~/.shell_prompt.sh
+else 
+    # use anishathalye prompt
+    source ~/.zsh/prompt.zsh
+fi
 
 # External plugins (initialized after)
 source ~/.zsh/plugins_after.zsh
