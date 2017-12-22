@@ -230,6 +230,14 @@ nnoremap <leader>ggra :Gvsplit! gra<CR> :AnsiEsc<CR>
 nnoremap <leader>ggrad :Gvsplit! grad<CR> :AnsiEsc<CR>
 nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
 
+" promptline
+let g:promptline_preset = {
+    \'a' : [ promptline#slices#host() ],
+    \'b' : [ promptline#slices#user() ],
+    \'c' : [ promptline#slices#cwd() ],
+    \'y' : [ '$(git rev-parse --abbrev-ref HEAD || git rev-parse --short HEAD)' ],
+    \'warn' : [ promptline#slices#last_exit_code() ]}
+
 "---------------------
 " Local customizations
 "---------------------
