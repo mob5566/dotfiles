@@ -235,7 +235,7 @@ let g:promptline_preset = {
     \'a' : [ promptline#slices#host() ],
     \'b' : [ promptline#slices#user() ],
     \'c' : [ promptline#slices#cwd() ],
-    \'y' : [ '$(git rev-parse --abbrev-ref HEAD || git rev-parse --short HEAD)' ],
+    \'y' : [ '$((git rev-parse --abbrev-ref HEAD || git rev-parse --short HEAD) 2> /dev/null)' ],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
 "---------------------
