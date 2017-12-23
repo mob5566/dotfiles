@@ -235,7 +235,12 @@ let g:promptline_preset = {
     \'a' : [ promptline#slices#host() ],
     \'b' : [ promptline#slices#user() ],
     \'c' : [ promptline#slices#cwd() ],
-    \'y' : [ '$((git rev-parse --abbrev-ref HEAD || git rev-parse --short HEAD) 2> /dev/null)' ],
+    \'y' : [
+    \    promptline#slices#python_virtualenv(),
+    \    promptline#slices#git_status(),
+    \    promptline#symbols#get().vcs_branch
+    \        .'$(((git symbolic-ref --quiet HEAD >/dev/null && git rev-parse --abbrev-ref HEAD) || git rev-parse --short HEAD) 2> /dev/null)'
+    \],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
 "---------------------
