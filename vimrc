@@ -110,6 +110,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 " insert date
 nnoremap <F2> :read !date -I<CR>kJ<ESC>
 
+" copy to clipboard
+nnoremap <F3> "+y
+
 "---------------------
 " Plugin configuration
 "---------------------
