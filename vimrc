@@ -112,6 +112,7 @@ nnoremap <F2> :read !date -I<CR>kJ<ESC>
 
 " copy to clipboard
 nnoremap <F3> "+y
+vnoremap <F3> "+y
 
 "---------------------
 " Plugin configuration
