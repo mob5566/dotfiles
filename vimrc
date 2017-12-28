@@ -241,7 +241,7 @@ let promptline_git_branch = {
     \    'function git_branch {',
     \    '  local br',
     \    '  if ! git rev-parse >/dev/null 2>&1; then',
-    \    '    return',
+    \    '    return 1',
     \    '  fi',
     \    '  if git symbolic-ref --quiet HEAD >/dev/null 2>&1; then',
     \    '    br=$(git rev-parse --abbrev-ref HEAD) 2>/dev/null',
