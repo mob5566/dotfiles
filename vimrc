@@ -243,11 +243,11 @@ let promptline_git_branch = {
     \    '  if ! git rev-parse >/dev/null 2>&1; then',
     \    '    return',
     \    '  fi',
-	\	 '  if git symbolic-ref --quiet HEAD >/dev/null 2>&1; then',
-	\	 '    br=$(git rev-parse --abbrev-ref HEAD) 2>/dev/null',
-	\	 '  else',
-	\	 '    br=$(git rev-parse --short HEAD) 2>/dev/null',
-	\	 '  fi',
+    \    '  if git symbolic-ref --quiet HEAD >/dev/null 2>&1; then',
+    \    '    br=$(git rev-parse --abbrev-ref HEAD) 2>/dev/null',
+    \    '  else',
+    \    '    br=$(git rev-parse --short HEAD) 2>/dev/null',
+    \    '  fi',
     \    '  printf "%s" "'.promptline#symbols#get().vcs_branch.'$br"',
     \    '}']}
 
@@ -258,7 +258,7 @@ let g:promptline_preset = {
     \'y' : [
     \    promptline#slices#python_virtualenv(),
     \    promptline#slices#git_status(),
-	\    promptline_git_branch
+    \    promptline_git_branch
     \],
     \'warn' : [ promptline#slices#last_exit_code() ]}
 
