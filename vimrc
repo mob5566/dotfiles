@@ -107,6 +107,9 @@ command! -nargs=0 Sudow w !sudo tee % >/dev/null
 " open quickfix window after grep
 autocmd QuickFixCmdPost *grep* cwindow
 
+" centering the cursor with \zz
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+
 " insert date
 nnoremap <F2> :read !date -I<CR>kJ<ESC>
 
