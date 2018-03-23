@@ -249,6 +249,7 @@ if has("cscope")
     set csto=0
     set cst
     set nocsverb
+    set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
     " add any database in current directory
     if filereadable("cscope.out")
         cs add cscope.out
@@ -258,42 +259,42 @@ if has("cscope")
     endif
     set csverb
 
-	" mappings
-	nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
-	nmap <C-_>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-	nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-_>a :cs find a <C-R>=expand("<cword>")<CR><CR>
+    " mappings
+    nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-_>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_>a :cs find a <C-R>=expand("<cword>")<CR><CR>
 
-	" Using 'CTRL-\' then a search type makes the vim window
-	" split horizontally, with search result displayed in
-	" the new window.
+    " Using 'CTRL-\' then a search type makes the vim window
+    " split horizontally, with search result displayed in
+    " the new window.
 
-	nmap <C-\>s :scs find s <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\>g :scs find g <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\>c :scs find c <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\>t :scs find t <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\>e :scs find e <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
-	nmap <C-\>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-	nmap <C-\>d :scs find d <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\>a :scs find a <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>s :scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>g :scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>c :scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>t :scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>e :scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-\>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-\>d :scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>a :scs find a <C-R>=expand("<cword>")<CR><CR>
 
-	" Hitting CTRL-\ *twice* before the search type does a vertical
-	" split instead of a horizontal one
+    " Hitting CTRL-\ *twice* before the search type does a vertical
+    " split instead of a horizontal one
 
-	nmap <C-\><C-\>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\><C-\>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\><C-\>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\><C-\>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\><C-\>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\><C-\>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-	nmap <C-\><C-\>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
-	nmap <C-\><C-\>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-\><C-\>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
 endif
 
 "---------------------
