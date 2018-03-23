@@ -213,8 +213,6 @@ nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " i: Find files #including this file
 nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 
-let g:cscope_open_location = 0
-
 " fugitive
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gr :Gread<CR>
