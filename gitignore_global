@@ -10,6 +10,7 @@
 
 # Editing tools and IDEs #
 ##########################
+cscope.*
 *.swp
 *~
 \#*\#

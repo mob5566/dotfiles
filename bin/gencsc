@@ -1,0 +1,6 @@
+#!/bin/bash
+# generate cscope database
+
+find $(pwd) -name "*.[ch]" | xargs realpath > cscope.files
+
+cscope -b -q -k
