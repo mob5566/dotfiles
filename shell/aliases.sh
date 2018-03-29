@@ -131,10 +131,40 @@ alias peek='tee >(cat 1>&2)'
 # Programming Contests
 #
 
+# setup codebase
+gencb() {
+	local cbname
+	local pnumber
+	local usage
+	local i
+
+	usage="Usage: gencb <code_base_name> [problem_number=5]"
+
+	if [[ $# -lt 1 ]]; then
+		echo $usage
+		return 1
+	fi
+
+	cbname=$1
+	pnumber=5
+
+	if [[ "$#" -ge 2 ]] && [[ "$2" =~ "[0-9]+$" ]]; then
+		pnumber=$2
+	fi
+
+	mcd "$cbname"
+
+	for i in $(seq $pnumber); do
+		temp $(echo $i | tr "1-9" "a-i").cpp
+	done
+
+	cp ~/.template/pc/Makefile .
+}
+
 # code templates
 temp() {
-    filename=$(basename ${1})
-    ext=${filename##*.}
+    local filename=$(basename ${1})
+    local ext=${filename##*.}
 
     cp ~/.template/pc/"temp.$ext" $filename 2> "/dev/null"
 }
