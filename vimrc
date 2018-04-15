@@ -70,7 +70,7 @@ set softtabstop=4
 set ignorecase
 set smartcase
 " tab completion for files/bufferss
-set wildmode=longest,list
+set wildmode=list:longest,full
 set wildmenu
 set mouse+=a " enable mouse mode (scrolling, selection, etc)
 if &term =~ '^screen'
