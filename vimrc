@@ -46,7 +46,8 @@ set nu " number lines
 set rnu " relative line numbering
 set incsearch " incremental search (as string is being typed)
 set hls " highlight search
-set listchars=tab:>>,nbsp:~ " set list to see tabs and non-breakable spaces
+set list " show <Tab> and <EOL>
+set listchars=tab:>\ ,nbsp:~ " set list to see tabs and non-breakable spaces
 set lbr " line break
 set ruler " show current position in file
 set scrolloff=5 " show lines above and below cursor (when possible)
@@ -296,6 +297,10 @@ if has("cscope")
     nmap <C-\><C-\>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
     nmap <C-\><C-\>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
 endif
+
+" indentLine
+let g:indentLine_color_term = 114
+let g:indentLine_char = '┆'
 
 "---------------------
 " Local customizations
