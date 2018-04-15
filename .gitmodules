@@ -113,3 +113,6 @@
 [submodule "vim/bundle/AnsiEsc.vim"]
 	path = vim/bundle/AnsiEsc.vim
 	url = https://github.com/mob5566/AnsiEsc.vim
+[submodule "vim/bundle/vim-better-whitespace"]
+	path = vim/bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
