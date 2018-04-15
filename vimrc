@@ -61,6 +61,7 @@ set autochdir " automatically set current directory to directory of last opened 
 set hidden " allow auto-hiding of edited buffers
 set history=8192 " more history
 set nojoinspaces " suppress inserting two spaces between sentences
+set colorcolumn=80 " colored column at 80
 " use 4 spaces instead of tabs during formatting
 set expandtab
 set tabstop=4
