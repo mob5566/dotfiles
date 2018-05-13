@@ -4,7 +4,7 @@ IN_FILES := $(patsubst %.cpp,%.in,$(SRC_FILES))
 OUT_FILES := $(patsubst %.cpp,%.out,$(SRC_FILES))
 ANS_FILES := $(patsubst %.cpp,%.ans,$(SRC_FILES))
 CC := g++
-CFLAGS := -std=c++11
+CFLAGS := -std=c++11 -DDEBUG
 RM := rm -f
 
 .PHONY: all test_all test% clean clean_all
