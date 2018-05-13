@@ -112,9 +112,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 " centering the cursor with \zz
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 
-" insert date
-nnoremap <F2> :read !date -I<CR>kJ<ESC>
-
 " copy to clipboard
 nnoremap <F3> "+y
 vnoremap <F3> "+y
