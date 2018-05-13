@@ -22,6 +22,12 @@ typedef unsigned long long ull;
 typedef vector<int> VI;
 typedef pair<int,int> PII;
 
+const int oo = 0x3f3f3f3f;
+const ll  OO = 0x3f3f3f3f3f3f3f3fLL;
+const int       M7  = 1000000007;
+const int       M9  = 1000000009;
+const long long M7L = 1000000007L;
+
 #ifdef DEBUG
 #define debug(code) code
 #define debugf(...) \
@@ -108,6 +114,9 @@ void W( const T& head, const U&... tail ) {
     putchar(sizeof...(tail)?' ':'\n');
     W(tail...);
 }
+
+template<typename T> inline bool chkmax(T &a, const T &b) { return b > a ? a = b, true : false; }
+template<typename T> inline bool chkmin(T &a, const T &b) { return b < a ? a = b, true : false; }
 // from SHIK }}}
 // }}}
 
