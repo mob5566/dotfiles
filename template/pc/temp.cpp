@@ -120,7 +120,8 @@ template<typename T> inline bool chkmin(T &a, const T &b) { return b < a ? a = b
 // from SHIK }}}
 // }}}
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 	int tt;
 
 	R(tt);
