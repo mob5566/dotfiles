@@ -137,8 +137,23 @@ gencb() {
 	local pnumber
 	local usage
 	local i
+	local tempsrc
 
-	usage="Usage: gencb <code_base_name> [problem_number=5]"
+	usage="Usage: gencb [-G] <code_base_name> [problem_number=5]"
+	tempsrc="$HOME/.template/pc/temp.cpp"
+
+	while [[ "$#" -ge 1 ]] && [[ "$1" =~ "-." ]]; do
+		case $1 in
+			-G)
+				tempsrc="$HOME/.template/pc/temp_gcj.cpp"
+				;;
+			*)
+				echo $usage
+				return 1
+				;;
+		esac
+		shift
+	done
 
 	if [[ $# -lt 1 ]]; then
 		echo $usage
@@ -155,10 +170,10 @@ gencb() {
 	mcd "$cbname"
 
 	for i in $(seq $pnumber); do
-		temp $(echo $i | tr "1-9" "a-i").cpp
+		cp $tempsrc $(echo $i | tr "1-9" "a-i").cpp
 	done
 
-	cp ~/.template/pc/Makefile .
+	cp $HOME/.template/pc/Makefile .
 }
 
 # code templates

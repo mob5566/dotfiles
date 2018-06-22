@@ -122,6 +122,16 @@ template<typename T> inline bool chkmin(T &a, const T &b) { return b < a ? a = b
 
 int main(int argc, char *argv[])
 {
+	int tt;
+
+	R(tt);
+
+	fori (ti, 1, tt) {
+		printf("Case #%d:", ti);
+
+		debugf("## test case %d solved at %.3f sec ##\n",
+			ti, (double)clock()/CLOCKS_PER_SEC);
+	}
 
 	return 0;
 }
