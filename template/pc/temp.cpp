@@ -13,7 +13,7 @@ using namespace std;
 #define allof(s) (s).begin(), (s).end()
 #define mkp make_pair
 #define pushb push_back
-#define popb push_back
+#define popb pop_back
 #define fi first
 #define sd second
 
