@@ -33,6 +33,9 @@ syspip3() {
 # cd to git root directory
 alias cdgr='cd "$(git root)"'
 
+# vim read-only mode
+alias vimro='vim -R'
+
 # Create a directory and cd into it
 mcd() {
     mkdir "${1}" && cd "${1}"
