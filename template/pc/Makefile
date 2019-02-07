@@ -1,34 +1,45 @@
 SRC_FILES := $(wildcard *.cpp)
-TAR_FILES := $(patsubst %.cpp,%,$(SRC_FILES))
-IN_FILES := $(patsubst %.cpp,%.in,$(SRC_FILES))
-OUT_FILES := $(patsubst %.cpp,%.out,$(SRC_FILES))
-ANS_FILES := $(patsubst %.cpp,%.ans,$(SRC_FILES))
+TAR_FILES := $(patsubst %.cpp,%.prog,$(SRC_FILES))
+IN_FILES := $(wildcard *.in)
+OUT_FILES := $(patsubst %.in,%.out,$(IN_FILES))
+ANS_FILES := $(patsubst %.in,%.ans,$(IN_FILES))
 CC := g++
 CFLAGS := -std=c++11 -DDEBUG
 RM := rm -f
+SHELL := /bin/bash
 
-.PHONY: all test_all test% clean clean_all
+.PHONY: all test-all test-% clean clean-all
+.SECONDEXPANSION:
 
-all: test_all
+all: test-all
 
-test_all: $(TAR_FILES) $(OUT_FILES) $(ANS_FILES)
+test-all: $(OUT_FILES) $(ANS_FILES)
 	@echo "## Test All Problems... ##"
-	@diff -q %.ans %.out
+	@for out_file in $(OUT_FILES) ; do \
+		echo " - Testing $$out_file" ; \
+		diff $$out_file $${out_file/out/ans} || exit 1 ; \
+	done
 	@echo "## All Problems Pass! ##"
 
-test%: % %.out %.ans
+test-%: $$(filter %%, $(OUT_FILES)) $$(filter %%, $(ANS_FILES))
 	@echo "## Test Problem $*... ##"
-	@diff -q $*.out $*.ans
+	@for out_file in $**.out ; do \
+		echo " - Testing $$out_file" ; \
+		diff $$out_file $${out_file/out/ans} || exit 1 ; \
+	done
 	@echo "## Problem $* Pass! ##"
 
-%.out: %.in %
-	./$* < $*.in > $@
+cat-%: %.out
+	@cat $<
 
-%: %.cpp
+%.out: $$(basename %).prog %.in
+	./$< < $*.in > $@
+
+%.prog: %.cpp
 	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
 	$(RM) $(TAR_FILES) $(OUT_FILES)
 
-cleanall: clean
-	$(RM) *.in *.ans
+clean-all: clean
+	$(RM) $(IN_FILES) $(ANS_FILES)
