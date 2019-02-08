@@ -4,9 +4,13 @@ IN_FILES := $(wildcard *.in)
 OUT_FILES := $(patsubst %.in,%.out,$(IN_FILES))
 ANS_FILES := $(patsubst %.in,%.ans,$(IN_FILES))
 CC := g++
-CFLAGS := -std=c++11 -DDEBUG
+CFLAGS := -std=c++11
 RM := rm -f
 SHELL := /bin/bash
+
+ifndef NODEBUG
+    CFLAGS += -DDEBUG
+endif
 
 .PHONY: all test-all test-% clean clean-all
 .SECONDEXPANSION:
