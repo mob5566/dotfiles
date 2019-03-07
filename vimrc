@@ -141,7 +141,7 @@ let g:ctrlp_show_hidden = 1
 " ag
 let g:ag_mapping_message=0
 command! -nargs=+ Gag Gcd | Ag! <args>
-nnoremap K :Gag "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap K :Gag "\b""<C-R><C-W>""\b"<CR>:cw<CR>
 if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 endif
