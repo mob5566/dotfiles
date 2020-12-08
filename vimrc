@@ -171,7 +171,8 @@ map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 " hightlight the word on cursor
-map <Leader>h g/<C-R><C-W><CR>
+nmap <Leader>h g/<C-R>_<C-W><CR>
+vmap <Leader>h yg/<C-R>_"<CR>
 
 " incsearch-easymotion
 map z/ <Plug>(incsearch-easymotion-/)
