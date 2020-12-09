@@ -306,6 +306,10 @@ endif
 let g:indentLine_color_term = 114
 let g:indentLine_char = '┆'
 
+" clang-format
+" if you install vim-operator-user
+autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+
 "---------------------
 " Local customizations
 "---------------------
