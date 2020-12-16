@@ -275,31 +275,42 @@ if has("cscope")
     nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
     nmap <C-_>a :cs find a <C-R>=expand("<cword>")<CR><CR>
 
+    nmap <C-_><C-_>s :tab scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_><C-_>g :tab scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_><C-_>c :tab scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_><C-_>t :tab scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_><C-_>e :tab scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_><C-_>f :tab scs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-_><C-_>i :tab scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-_><C-_>d :tab scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-_><C-_>a :tab scs find a <C-R>=expand("<cword>")<CR><CR>
+
     " Using 'CTRL-\' then a search type makes the vim window
     " split horizontally, with search result displayed in
     " the new window.
 
-    nmap <C-\>s :scs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\>g :scs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\>c :scs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\>t :scs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\>e :scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
-    nmap <C-\>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-    nmap <C-\>d :scs find d <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\>a :scs find a <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-\>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-\>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
 
     " Hitting CTRL-\ *twice* before the search type does a vertical
     " split instead of a horizontal one
 
-    nmap <C-\><C-\>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\><C-\>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\><C-\>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\><C-\>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\><C-\>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\><C-\>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-    nmap <C-\><C-\>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-\><C-\>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>s :scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>g :scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>c :scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>t :scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>e :scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-\><C-\>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-\><C-\>d :scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\><C-\>a :scs find a <C-R>=expand("<cword>")<CR><CR>
 endif
 
 " indentLine
