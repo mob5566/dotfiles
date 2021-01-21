@@ -221,6 +221,10 @@ nnoremap <leader>ggra :Gvsplit! gra<CR> :AnsiEsc<CR>
 nnoremap <leader>ggrad :Gvsplit! grad<CR> :AnsiEsc<CR>
 nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
 
+" jedi-vim
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#popup_on_dot = 0
+
 " promptline
 let promptline_git_branch = {
     \'function_name': 'git_branch',
