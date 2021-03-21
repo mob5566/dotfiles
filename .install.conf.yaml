@@ -23,6 +23,7 @@
     ~/.zsh:
     ~/.zshrc:
     ~/.template:
+    ~/.pylintrc:
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
