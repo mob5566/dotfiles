@@ -222,6 +222,7 @@ nnoremap <leader>ggrad :Gvsplit! grad<CR> :AnsiEsc<CR>
 nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
 
 " jedi-vim
+let g:jedi#auto_initialization = 0
 let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#popup_on_dot = 0
 
