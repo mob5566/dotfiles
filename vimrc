@@ -222,9 +222,16 @@ nnoremap <leader>ggrad :Gvsplit! grad<CR> :AnsiEsc<CR>
 nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
 
 " jedi-vim
-let g:jedi#auto_initialization = 0
-let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#auto_initialization = 1
+let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#popup_on_dot = 0
+let g:jedi#goto_command = "<leader>jd"
+let g:jedi#goto_stubs_command = "<leader>js"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "<leader>jk"
+let g:jedi#usages_command = "<leader>jn"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = ""
 
 " promptline
 let promptline_git_branch = {
