@@ -1,5 +1,10 @@
 # Use colors in coreutils utilities output
-alias ls='ls --color=auto'
+
+if [[ "$OSTYPE" == linux-gnu* ]] ; then
+	alias ls='ls --color=auto'
+else
+	export CLICOLOR=1
+fi
 alias grep='grep --color'
 
 # ls aliases
