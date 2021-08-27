@@ -146,3 +146,6 @@
 [submodule "vim/bundle/vim-cpp"]
 	path = vim/bundle/vim-cpp
 	url = https://github.com/vim-jp/vim-cpp.git
+[submodule "vim/bundle/vimtex"]
+	path = vim/bundle/vimtex
+	url = https://github.com/lervag/vimtex.git
