@@ -333,6 +333,10 @@ let g:indentLine_char = '┆'
 " if you install vim-operator-user
 autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
 
+" vimtex
+let g:vimtex_fold_enabled = 1
+let g:vimtex_fold_manual = 1
+
 "---------------------
 " Local customizations
 "---------------------
