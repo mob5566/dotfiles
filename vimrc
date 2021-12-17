@@ -336,6 +336,7 @@ autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
 " vimtex
 let g:vimtex_fold_enabled = 1
 let g:vimtex_fold_manual = 1
+let g:vimtex_syntax_conceal_default = 0
 
 "---------------------
 " Local customizations
