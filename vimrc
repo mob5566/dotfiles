@@ -198,7 +198,6 @@ let g:markdown_fenced_languages = [
 \]
 
 " fugitive
-nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gw :Gwrite<CR>
 
