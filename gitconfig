@@ -41,6 +41,7 @@
 	gra = log --graph --format=compact --all # graph all
 	gral = log --graph --format=line --all # graph all line
 	grad = log --graph --format=detail --all # graph all in detail
+	his = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''    %C(green)%s%C(reset) %C(red)- %an%C(reset)' --all
 	sf = show --format=fuller --show-signature
 	sfw = show --format=fuller --color-words
 	sfs = show --format=fuller --stat
