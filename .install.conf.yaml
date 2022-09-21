@@ -24,6 +24,8 @@
     ~/.zshrc:
     ~/.template:
     ~/.pylintrc:
+    ~/.tig:
+    ~/.tigrc:
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
