@@ -26,6 +26,8 @@
     ~/.pylintrc:
     ~/.tig:
     ~/.tigrc:
+    ~/.gdbinit: gdb-dashboard/.gdbinit
+    ~/.gdbinit.d:
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
