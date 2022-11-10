@@ -32,6 +32,11 @@
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
+  -
+    command:  (cd vim/bundle/YouCompleteMe/ && python install.py --all)
+    description: Install YouCompleteMe
+    quite: true
+    stdout: true
 
   # generate tmuxline configure
   - vim -c 'Tmuxline airline' -c 'TmuxlineSnapshot! ~/.tmuxline.conf' -c 'quit'
