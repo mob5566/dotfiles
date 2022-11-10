@@ -1,5 +1,11 @@
 set nocompatible " not vi compatible
 
+" local customizations in ~/.vimrc_local_before
+let $LOCALFILE=expand("~/.vimrc_local_before")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
+
 "--------------
 " Load pathogen
 "--------------
@@ -341,8 +347,8 @@ let g:vimtex_syntax_conceal_default = 0
 " Local customizations
 "---------------------
 
-" local customizations in ~/.vimrc_local
-let $LOCALFILE=expand("~/.vimrc_local")
+" local customizations in ~/.vimrc_local_after
+let $LOCALFILE=expand("~/.vimrc_local_after")
 if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
