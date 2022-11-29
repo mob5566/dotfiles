@@ -230,13 +230,6 @@ nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
 let g:jedi#auto_initialization = 1
 let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#popup_on_dot = 0
-let g:jedi#goto_command = "<leader>jd"
-let g:jedi#goto_stubs_command = "<leader>js"
-let g:jedi#goto_definitions_command = ""
-let g:jedi#documentation_command = "<leader>jk"
-let g:jedi#usages_command = "<leader>jn"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#rename_command = ""
 
 " promptline
 let promptline_git_branch = {
@@ -342,6 +335,13 @@ autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
 let g:vimtex_fold_enabled = 1
 let g:vimtex_fold_manual = 1
 let g:vimtex_syntax_conceal_default = 0
+
+" YouCompleteMe
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>jn :YcmCompleter GoToReferences<CR>
+nmap <leader>D <plug>(YCMHover)
+nmap <leader>yfw <Plug>(YCMFindSymbolInWorkspace)
+nmap <leader>yfd <Plug>(YCMFindSymbolInDocument)
 
 "---------------------
 " Local customizations
