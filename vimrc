@@ -231,6 +231,13 @@ nnoremap <leader>ggrdl :Gvsplit! gral<CR> :AnsiEsc<CR>
 let g:jedi#auto_initialization = 1
 let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#popup_on_dot = 0
+let g:jedi#goto_command = ""
+let g:jedi#goto_stubs_command = ""
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = ""
+let g:jedi#usages_command = ""
+let g:jedi#completions_command = ""
+let g:jedi#rename_command = ""
 
 " promptline
 let promptline_git_branch = {
