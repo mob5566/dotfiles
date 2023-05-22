@@ -304,6 +304,9 @@ let g:ycm_semantic_triggers =  {
   \   'erlang': [':'],
   \ }
 
+" Tagbar
+let g:tagbar_file_size_limit = 524288 " 512K
+
 "---------------------
 " Local customizations
 "---------------------
