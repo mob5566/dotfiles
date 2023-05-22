@@ -283,6 +283,7 @@ let g:vimtex_syntax_conceal_default = 0
 " YouCompleteMe
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>jn :YcmCompleter GoToReferences<CR>
+nnoremap <leader>js :YcmCompleter GoToSymbol <C-R><C-W><CR>
 nmap <leader>D <plug>(YCMHover)
 nmap <leader>yfw <Plug>(YCMFindSymbolInWorkspace)
 nmap <leader>yfd <Plug>(YCMFindSymbolInDocument)
