@@ -123,6 +123,10 @@ nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 nnoremap <F3> "+y
 vnoremap <F3> "+y
 
+" fold brackets
+nnoremap zB zfaB
+nnoremap zb zfab
+
 "---------------------
 " Plugin configuration
 "---------------------
