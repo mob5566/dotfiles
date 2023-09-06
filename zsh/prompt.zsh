@@ -142,11 +142,11 @@ GIT_PROMPT_DETACHED="%{$fg[neon]%}%B!%b%{$reset_color%}"
 
 # Show Git branch/tag, or name-rev if on detached head
 function parse_git_branch() {
-    (git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD) 2> /dev/null
+    (timeout 3 git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD) 2> /dev/null
 }
 
 function parse_git_detached() {
-    if ! git symbolic-ref HEAD >/dev/null 2>&1; then
+    if ! timeout 3 git symbolic-ref HEAD >/dev/null 2>&1; then
         echo "${GIT_PROMPT_DETACHED}"
     fi
 }
