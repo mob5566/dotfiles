@@ -288,9 +288,17 @@ let g:vimtex_syntax_conceal_default = 0
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>jn :YcmCompleter GoToReferences<CR>
 nnoremap <leader>js :YcmCompleter GoToSymbol <C-R><C-W><CR>
+nnoremap <leader>jf :YcmCompleter FixIt<CR>
 nmap <leader>D <plug>(YCMHover)
 nmap <leader>yfw <Plug>(YCMFindSymbolInWorkspace)
 nmap <leader>yfd <Plug>(YCMFindSymbolInDocument)
+
+" Let clangd fully control code completion
+let g:ycm_clangd_uses_ycmd_caching = 0
+" Use installed clangd, not YCM-bundled clangd which doesn't get updates.
+let g:ycm_clangd_binary_path = exepath("clangd")
+let g:ycm_clangd_args = ['-log=verbose', '-pretty', '--all-scopes-completion']
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 let g:ycm_key_invoke_completion = '<C-Space>'
 let g:ycm_semantic_triggers =  {
