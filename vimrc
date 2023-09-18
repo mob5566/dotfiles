@@ -319,6 +319,7 @@ let g:ycm_semantic_triggers =  {
 " Tagbar
 let g:tagbar_file_size_limit = 524288 " 512K
 let g:airline#extensions#tagbar#enabled = 0
+let g:airline#extensions#searchcount#enabled = 0
 
 "---------------------
 " Local customizations
