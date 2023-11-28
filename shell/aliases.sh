@@ -19,6 +19,10 @@ alias mv='mv -i'
 # git related aliases
 alias gag='git exec ag'
 
+# pager
+export PAGER=bat
+alias cat='bat --paging=never'
+
 # Update dotfiles
 dfu() {
     (
