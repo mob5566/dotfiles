@@ -157,3 +157,6 @@
 [submodule "vim/bundle/Jenkinsfile-vim-syntax"]
 	path = vim/bundle/Jenkinsfile-vim-syntax
 	url = https://github.com/martinda/Jenkinsfile-vim-syntax.git
+[submodule "vim/bundle/nnn.vim"]
+	path = vim/bundle/nnn.vim
+	url = https://github.com/mcchrish/nnn.vim.git
