@@ -9,7 +9,7 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 
 ### NNN
 export NNN_OPTS='edrx'
-export NNN_PLUG='o:fzopen;c:fzcd;p:preview-tui;t:preview-tabbed;i:imgview;'
+export NNN_PLUG='o:fzopen;c:fzcd;p:preview-tui;t:preview-tabbed;i:imgview;j:autojump;'
 export NNN_COLORS='#1ba01cdc;4923'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_FIFO='/tmp/nnn.fifo'

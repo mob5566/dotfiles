@@ -49,11 +49,6 @@ mcd() {
     mkdir "${1}" && cd "${1}"
 }
 
-# Jump to directory containing file
-jump() {
-    cd "$(dirname ${1})"
-}
-
 # cd replacement for screen to track cwd (like tmux)
 scr_cd()
 {
