@@ -20,7 +20,9 @@ alias mv='mv -i'
 alias gag='git exec ag'
 
 # bat
-alias cat='bat --paging=never'
+if which bat > /dev/null; then
+	alias cat='bat --paging=never'
+fi
 
 # Update dotfiles
 dfu() {
