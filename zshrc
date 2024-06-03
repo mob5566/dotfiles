@@ -1,3 +1,6 @@
+# zshrc profiling
+zmodload zsh/zprof
+
 # Allow local customizations in the ~/.shell_local_before file
 if [ -f ~/.shell_local_before ]; then
     source ~/.shell_local_before
@@ -44,3 +47,6 @@ fi
 if [ -f ~/.zshrc_local_after ]; then
     source ~/.zshrc_local_after
 fi
+
+# Uncomment the next line to profile zshrc
+# zprof
