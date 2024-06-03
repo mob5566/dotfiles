@@ -30,7 +30,7 @@ source ~/.shell/aliases.sh
 if [ -f ~/.shell_prompt.sh ]; then
     # use Promptline
     source ~/.shell_prompt.sh
-else 
+else
     # use anishathalye prompt
     source ~/.zsh/prompt.zsh
 fi
