@@ -134,6 +134,7 @@ nnoremap zb zfab
 " nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
+let NERDTreeQuitOnOpen=3
 
 " tagbar
 nnoremap <Leader>t :TagbarToggle<CR>
