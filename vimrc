@@ -145,19 +145,6 @@ if has('python3')
     let g:gundo_prefer_python3 = 1
 endif
 
-" ctrlp
-nnoremap ; :CtrlPBuffer<CR>
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_show_hidden = 1
-
-" ag
-let g:ag_mapping_message=0
-command! -nargs=+ Gag Gcd | Ag! <args>
-nnoremap K :Gag "\b""<C-R><C-W>""\b"<CR>:cw<CR>
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-endif
-
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -321,6 +308,15 @@ let g:ycm_semantic_triggers =  {
 let g:tagbar_file_size_limit = 524288 " 512K
 let g:airline#extensions#tagbar#enabled = 0
 let g:airline#extensions#searchcount#enabled = 0
+
+" fzf
+"   mimic CtrlP
+nnoremap <C-P> :GFiles<CR>
+nnoremap ; :Buffers<CR>
+"   mimic Ag
+command! -nargs=+ Grg Gcd | Rg <args>
+nnoremap K :Grg \b<C-R><C-W>\b<CR>
+inoremap <expr> <c-x><c-f> fzf#vim#complete#path('fd --type f --strip-cwd-prefix')
 
 "---------------------
 " Local customizations
