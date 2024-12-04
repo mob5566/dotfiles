@@ -18,3 +18,6 @@ export NNN_BATTHEME='TwoDark'
 # fzf
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --border --info=inline'
+
+# ripgrep
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc

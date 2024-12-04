@@ -30,6 +30,8 @@
     ~/.gdbinit: gdb-dashboard/.gdbinit
     ~/.gdbinit.d:
     ~/.config/bat/config: bat_config
+    ~/.ripgreprc:
+    ~/.zsh-complete: zsh/zsh-complete
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
