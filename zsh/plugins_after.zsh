@@ -41,6 +41,9 @@ if fzf --zsh > /dev/null ; then
     source <(fzf --zsh)
 fi
 
+# zsh-interactive-cd
+source ~/.zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+
 # enable autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
