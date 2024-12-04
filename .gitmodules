@@ -158,3 +158,6 @@
 [submodule "vim/bundle/fzf"]
 	path = vim/bundle/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "shell/plugins/autojump"]
+	path = shell/plugins/autojump
+	url = https://github.com/wting/autojump.git
