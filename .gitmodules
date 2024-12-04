@@ -164,3 +164,6 @@
 [submodule "shell/plugins/fzf-git"]
 	path = shell/plugins/fzf-git
 	url = https://github.com/junegunn/fzf-git.sh.git
+[submodule "zsh/plugins/zsh-interactive-cd"]
+	path = zsh/plugins/zsh-interactive-cd
+	url = https://github.com/mrjohannchang/zsh-interactive-cd.git
