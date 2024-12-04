@@ -161,3 +161,6 @@
 [submodule "shell/plugins/autojump"]
 	path = shell/plugins/autojump
 	url = https://github.com/wting/autojump.git
+[submodule "shell/plugins/fzf-git"]
+	path = shell/plugins/fzf-git
+	url = https://github.com/junegunn/fzf-git.sh.git
