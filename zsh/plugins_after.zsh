@@ -35,3 +35,8 @@ fi
 if [[ "$OSTYPE" == linux-gnu* ]] && [[ "$(tput colors)" == "256" ]]; then
     eval $(dircolors =(cat ~/.shell/plugins/dircolors-solarized/dircolors.256dark ~/.shell/dircolors.extra))
 fi
+
+# setup fzf completion
+if fzf --zsh > /dev/null ; then
+    source <(fzf --zsh)
+fi

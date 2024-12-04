@@ -14,3 +14,7 @@ export NNN_COLORS='#1ba01cdc;4923'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_BATTHEME='TwoDark'
+
+# fzf
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --border --info=inline'
