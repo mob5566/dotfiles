@@ -26,7 +26,7 @@ setopt incappendhistory
 setopt extendedhistory
 
 # Time to wait for additional characters in a sequence
-KEYTIMEOUT=1 # corresponds to 10ms
+# KEYTIMEOUT=1 # corresponds to 10ms
 
 # Use vim as the editor
 export EDITOR=vim
