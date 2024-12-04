@@ -21,3 +21,16 @@ export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --border --info=inline'
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
+
+# fzf-git
+source ~/.shell/plugins/fzf-git/fzf-git.sh
+
+## set fzf-git layout
+_fzf_git_fzf() {
+  fzf --height=40% \
+    --layout=reverse --multi --min-height=20 --border \
+    --border-label-pos=2 \
+    --color='header:italic:underline,label:blue' \
+    --preview-window='right,50%,border-left' \
+    --bind='ctrl-/:change-preview-window(down,50%,border-top|hidden|)' "$@"
+}
