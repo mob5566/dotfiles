@@ -39,6 +39,13 @@
     quite: true
     stdout: true
 
+  # install autojump
+  -
+    command:  (cd shell/plugins/autojump/ && ./install.py)
+    description: Install Autojump
+    quite: true
+    stdout: true
+
   # generate tmuxline configure
   - vim -c 'Tmuxline airline' -c 'TmuxlineSnapshot! ~/.tmuxline.conf' -c 'quit'
   # generate promptline configure
