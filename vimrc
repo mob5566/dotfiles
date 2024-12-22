@@ -135,6 +135,9 @@ nnoremap zb zfab
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=3
+let NERDTreeMapOpenInTab='<C-T>'
+let NERDTreeMapOpenVSplit='<C-V>'
+let NERDTreeMapOpenSplit='<C-X>'
 
 " tagbar
 nnoremap <Leader>t :TagbarToggle<CR>
