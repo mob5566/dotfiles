@@ -315,7 +315,7 @@ nnoremap <C-P> :GFiles<CR>
 nnoremap ; :Buffers<CR>
 "   mimic Ag
 command! -nargs=+ Grg Gcd | Rg <args>
-nnoremap K :Grg \b<C-R><C-W>\b<CR>
+nnoremap K :Grg <C-R><C-W><CR>
 inoremap <expr> <c-x><c-f> fzf#vim#complete#path('fd --type f --strip-cwd-prefix')
 
 "---------------------
