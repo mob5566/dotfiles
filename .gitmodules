@@ -167,3 +167,6 @@
 [submodule "zsh/plugins/zsh-interactive-cd"]
 	path = zsh/plugins/zsh-interactive-cd
 	url = https://github.com/mrjohannchang/zsh-interactive-cd.git
+[submodule "vim/bundle/vim-localvimrc"]
+	path = vim/bundle/vim-localvimrc
+	url = https://github.com/embear/vim-localvimrc.git
