@@ -34,3 +34,8 @@ _fzf_git_fzf() {
     --preview-window='right,50%,border-left' \
     --bind='ctrl-/:change-preview-window(down,50%,border-top|hidden|)' "$@"
 }
+
+# leetcode-cli
+if which leetcode 2>&1 > /dev/null ; then
+  eval "$(leetcode completions)"
+fi
