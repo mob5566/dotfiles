@@ -16,6 +16,8 @@ export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_BATTHEME='TwoDark'
 
 # fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS='--height=~90% --layout=reverse --border --info=inline --preview-window="right,50%,border-left" --preview "bat --color=always {}"'
 
