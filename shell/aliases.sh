@@ -48,7 +48,7 @@ alias vimro='vim -R'
 
 # Create a directory and cd into it
 mcd() {
-    mkdir "${1}" && cd "${1}"
+    mkdir -p "${1}" && cd "${1}"
 }
 
 # cd replacement for screen to track cwd (like tmux)
