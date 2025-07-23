@@ -32,6 +32,7 @@
     ~/.config/bat/config: bat_config
     ~/.ripgreprc:
     ~/.zsh-complete: zsh/zsh-complete
+    ~/.config/nnn/plugins/diffs_: config/nnn/plugins/diffs_
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
