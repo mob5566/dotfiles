@@ -33,6 +33,7 @@
     ~/.ripgreprc:
     ~/.zsh-complete: zsh/zsh-complete
     ~/.config/nnn/plugins/diffs_: config/nnn/plugins/diffs_
+    ~/.ycm_global_extra_conf.py: ycm_global_extra_conf.py
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
