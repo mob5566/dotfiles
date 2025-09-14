@@ -1,0 +1,17 @@
+description = "Create a Git commit with message based on staged changes."
+
+prompt = """
+Please generate a Conventional Git Commit message based on the following git
+diff:
+
+```diff
+!{git diff --staged}
+```
+
+Please create a Git commit with the following command with the generated
+messages.
+
+```
+git commit -s -m '<generated_messages>'
+```
+"""
