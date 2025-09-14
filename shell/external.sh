@@ -7,6 +7,9 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # Python startup file
 export PYTHONSTARTUP=$HOME/.pythonrc
 
+# Set breakpoint() in Python to call pudb
+export PYTHONBREAKPOINT="pudb.set_trace"
+
 ### NNN
 export NNN_OPTS='edrxAH'
 export NNN_PLUG='o:fzopen;c:fzcd;p:preview-tui;t:preview-tabbed;i:imgview;j:autojump;d:diffs_;a:ag;g:gitroot;f:finder;'
