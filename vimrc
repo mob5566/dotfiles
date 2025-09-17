@@ -127,13 +127,29 @@ vnoremap <F3> "+y
 nnoremap zB zfaB
 nnoremap zb zfab
 
+" toggle folding
+function! ToggleIndentFold()
+  if &foldmethod == "indent"
+    " If indent folding is ON, turn it OFF
+    set foldmethod=manual  " Switch to manual folding
+    normal! zR             " Open all folds
+    echo "Indent folding OFF"
+  else
+    " If indent folding is OFF, turn it ON
+    set foldmethod=indent
+    set foldlevel=3
+    echo "Indent folding ON (level 3)"
+  endif
+endfunction
+nnoremap <Leader>fd :call ToggleIndentFold()<CR>
+
 "---------------------
 " Plugin configuration
 "---------------------
 
 " nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
-nnoremap <Leader>f :NERDTreeFind<CR>
+nnoremap <Leader>ff :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=3
 let NERDTreeMapOpenInTab='<C-T>'
 let NERDTreeMapOpenVSplit='<C-V>'
