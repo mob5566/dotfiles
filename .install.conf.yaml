@@ -38,6 +38,7 @@
     ~/.gemini/commands: gemini/commands
 
 - shell:
+  - git config --global url.https://github.com/.insteadOf git://github.com/
   - git update-submodules # after linking ~/.gitconfig
   -
     command:  (cd vim/bundle/YouCompleteMe/ && python install.py --all)
