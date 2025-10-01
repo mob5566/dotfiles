@@ -130,3 +130,5 @@
 	path = ~/.gitconfig_local
 [init]
 	defaultBranch = main
+[url "https://github.com/"]
+	insteadOf = git://github.com/
