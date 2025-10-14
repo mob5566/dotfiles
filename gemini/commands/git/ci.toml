@@ -8,8 +8,10 @@ diff:
 !{git diff --staged}
 ```
 
-Follow the following rules to generate the commit message.
+Here are additional information that helps describe the changes:
+{{args}}
 
+Follow the following general rules to generate the commit message:
 - Do not add extra changes with any of git add.
 - Learn and mimic commit style from the previous git logs.
     ```
@@ -17,6 +19,8 @@ Follow the following rules to generate the commit message.
     ```
 - Keep the commit messages with 80 column length.
 - Follow the Conventional Commits as much as possible.
+- Do not add the Change-Id and Signed-off-by lines. Those will be added by a
+post-commit hook.
 
 Please create a Git commit with the following command with the generated
 messages.
