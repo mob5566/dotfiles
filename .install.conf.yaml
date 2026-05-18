@@ -37,6 +37,7 @@
     ~/.gemini/GEMINI.md: gemini/GEMINI.md
     ~/.gemini/settings.json: gemini/settings.json
     ~/.gemini/commands: gemini/commands
+    ~/.gemini/jetski/skills: agents/skills
 
 - shell:
   - git config --global url.https://github.com/.insteadOf git://github.com/
