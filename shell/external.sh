@@ -12,7 +12,7 @@ export PYTHONBREAKPOINT="pudb.set_trace"
 
 ### NNN
 export NNN_OPTS='edrxAH'
-export NNN_PLUG='o:fzopen;c:fzcd;p:preview-tui;t:preview-tabbed;i:imgview;j:autojump;d:diffs_;a:ag;g:gitroot;f:finder;'
+export NNN_PLUG='o:fzopen;c:fzcd;p:preview-tui;t:preview-tabbed;i:imgview;j:autojump;d:diffs_;a:ag;g:gitroot;f:finder;m:show-md5;'
 export NNN_COLORS='#1ba01cdc;4923'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_FIFO='/tmp/nnn.fifo'

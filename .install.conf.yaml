@@ -36,6 +36,8 @@
     ~/.config/nnn/plugins/autojump:
       path: config/nnn/plugins/autojump
       force: true
+    ~/.config/nnn/plugins/show-md5: config/nnn/plugins/show-md5
+
     ~/.ycm_global_extra_conf.py: ycm_global_extra_conf.py
     ~/.gemini/GEMINI.md: gemini/GEMINI.md
     ~/.gemini/settings.json: gemini/settings.json

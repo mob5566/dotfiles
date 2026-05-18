@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Description: Show md5sum of selected files or hovered file.
+#
+# Shell: Bash
+# Author: Jetski
+
+SEL="${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection}"
+
+if [ -s "$SEL" ]; then
+    # Use NUL-terminated selection
+    xargs -0 md5sum < "$SEL"
+else
+    if [ -n "$1" ]; then
+        md5sum "$1"
+    else
+        echo "No file selected or hovered."
+    fi
+fi
+
+echo ""
+echo "Press Enter to continue..."
+read -r _
