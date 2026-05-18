@@ -33,6 +33,9 @@
     ~/.ripgreprc:
     ~/.zsh-complete: zsh/zsh-complete
     ~/.config/nnn/plugins/diffs_: config/nnn/plugins/diffs_
+    ~/.config/nnn/plugins/autojump:
+      path: config/nnn/plugins/autojump
+      force: true
     ~/.ycm_global_extra_conf.py: ycm_global_extra_conf.py
     ~/.gemini/GEMINI.md: gemini/GEMINI.md
     ~/.gemini/settings.json: gemini/settings.json
