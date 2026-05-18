@@ -1,5 +1,17 @@
 # Initialize completion
-autoload -Uz compinit && compinit -i
+autoload -Uz compinit
+run_compinit() {
+  setopt localoptions extendedglob
+  local cache="$HOME/.zcompdump"
+  # Use cache if newer than 24 hours
+  if [[ -n ${cache}(#qN.mh-24) ]]; then
+    compinit -C -d "$cache"
+  else
+    compinit -i -d "$cache"
+  fi
+}
+run_compinit
+unfunction run_compinit
 zstyle ':completion:*' menu select=4
 zmodload zsh/complist
 # Use vim style navigation keys in menu completion

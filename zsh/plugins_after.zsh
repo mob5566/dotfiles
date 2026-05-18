@@ -47,8 +47,6 @@ source ~/.zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # enable autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
-autoload -U compinit && compinit -u
-
 # fzf: autojump integration
 j() {
     local preview_cmd="ls {2..}"
