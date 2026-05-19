@@ -23,6 +23,8 @@ export NNN_BATTHEME='TwoDark'
 
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS='--height=~90% --layout=reverse --border --info=inline --preview-window="right,50%,border-left" --preview "bat --color=always {}"'
+export FZF_CTRL_R_OPTS="--preview 'echo {2..} | bat --color=always -pl sh' --preview-window down:3:wrap --bind 'ctrl-/:toggle-preview'"
+
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
