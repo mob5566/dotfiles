@@ -37,7 +37,30 @@
       path: config/nnn/plugins/autojump
       force: true
     ~/.config/nnn/plugins/show-md5: config/nnn/plugins/show-md5
-
+    ~/.config/nnn/plugins/ag:
+      path: config/nnn/plugins/ag
+      force: true
+    ~/.config/nnn/plugins/finder:
+      path: config/nnn/plugins/finder
+      force: true
+    ~/.config/nnn/plugins/fzcd:
+      path: config/nnn/plugins/fzcd
+      force: true
+    ~/.config/nnn/plugins/fzopen:
+      path: config/nnn/plugins/fzopen
+      force: true
+    ~/.config/nnn/plugins/gitroot:
+      path: config/nnn/plugins/gitroot
+      force: true
+    ~/.config/nnn/plugins/imgview:
+      path: config/nnn/plugins/imgview
+      force: true
+    ~/.config/nnn/plugins/preview-tabbed:
+      path: config/nnn/plugins/preview-tabbed
+      force: true
+    ~/.config/nnn/plugins/preview-tui:
+      path: config/nnn/plugins/preview-tui
+      force: true
     ~/.ycm_global_extra_conf.py: ycm_global_extra_conf.py
     ~/.gemini/GEMINI.md: gemini/GEMINI.md
     ~/.gemini/settings.json: gemini/settings.json
