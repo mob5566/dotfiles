@@ -324,7 +324,12 @@ let g:ycm_semantic_triggers =  {
   \ }
 
 " Ycm Python sys path
-let g:ycm_python_interpreter_path = ''
+" Automatically set YCM Python interpreter to active virtualenv or python3
+if !empty($VIRTUAL_ENV)
+  let g:ycm_python_interpreter_path = $VIRTUAL_ENV . '/bin/python3'
+else
+  let g:ycm_python_interpreter_path = exepath('python3')
+endif
 let g:ycm_python_sys_path = []
 let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_interpreter_path',
