@@ -30,3 +30,10 @@
 ## Git Commit Message
 
 - Limit the subject <=50 characters; use shorter first paragraph.
+
+## Git Execution Rules
+
+- When executing `git` commands in a specific directory or sub-repository,
+  do not use `git -C <path> ...`. Instead, use `cd <path> && git ...` so
+  that command permission allowlists can properly match `git <command>`.
+
