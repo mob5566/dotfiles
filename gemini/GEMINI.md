@@ -37,3 +37,18 @@
   do not use `git -C <path> ...`. Instead, use `cd <path> && git ...` so
   that command permission allowlists can properly match `git <command>`.
 
+## Shell Command Hygiene Rules
+
+- Keep terminal commands compatible with token-prefix allowlist matching:
+    - Do not use command or process substitutions (`$(...)`, backticks,
+      `<(...)`), brace expansions (`{a,b}`), arithmetic expressions or tests
+      (`((...))`, `$((...))`, `[ $n -eq 0 ]`), or inline code heredocs (`python3
+      - <<'EOF'`, `bash <<'EOF'`), which force whole-command exact matching and
+        trigger manual permission prompts.
+    - Do not redirect output to files (`> file`, `>> file`); use file tools to
+      write files (standard stream redirects such as `2>&1` and `2>/dev/null`
+      are fine).
+    - Invoke binaries by literal name (never `$PY ...` or quoted command names),
+      split dependent lookups into separate steps, and prefer allowlisted skill
+      helper scripts over ad-hoc inline Python/shell snippets.
+
