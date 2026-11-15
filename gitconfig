@@ -60,7 +60,7 @@
 	tar = ! "tar() { git archive --format tar --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; tar"
 	targz = ! "targz() { git archive --format tar.gz --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; targz"
 	zip = ! "zip() { git archive --format zip --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; zip"
-	bclean = "!git branch --no-color | grep -v '^*' | fzf -m | xargs -r git branch -d"
+	bclean = "!git branch --format='%(HEAD) %(refname:short) %(upstream:track)' | grep -v '^*' | fzf -m --preview 'git log --oneline --graph --date=short --color=always {1}' | awk '{print $1}' | xargs -r git branch -d"
 
 [diff]
 	mnemonicPrefix = true
