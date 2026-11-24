@@ -52,3 +52,17 @@
       split dependent lookups into separate steps, and prefer allowlisted skill
       helper scripts over ad-hoc inline Python/shell snippets.
 
+## Technical Writing Rules
+
+- Follow ASD-STE100 Simplified Technical English for documentation, plans,
+  docstrings, and technical prose:
+    - Use active voice.
+    - Use imperative verbs for procedural steps and simple present tense for
+      descriptions.
+    - Write one topic per sentence.
+    - Keep procedural sentences <= 20 words and descriptive sentences <= 25
+      words.
+    - Avoid semicolon chains, nested parentheticals, and ambiguous modal verbs.
+    - Keep exact CLI commands, flags, targets, paths, and code identifiers
+      unchanged.
+
